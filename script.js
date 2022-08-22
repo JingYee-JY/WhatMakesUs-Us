@@ -235,7 +235,7 @@ function Question(){
     }
 
     if(randomQuestionIndex == 0){
-        question.innerHTML = `<img class="Q" src="./img/q1.png">`
+        question.innerHTML = `<img class="Q" src="./img/Q1.png">`
         
         correctAnswer = Q2correctAnswer[randomRightIndex].number
         btn1Answer = Q2wrongAnswer[randomwrong1Index].number
