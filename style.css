@@ -127,8 +127,11 @@ button{
     height: 10vh;
 }
 .Q{
-    width: 35vh;
+    width: 45vh;
 }
 .end{
     width: 30vh;
+}
+.correct{
+    width: 35vh;
 }
