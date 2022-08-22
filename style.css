@@ -92,6 +92,9 @@ button{
 .top{
     height: 10vh;
 }
+.top1{
+    height: 20vh;
+}
 .hide{
     display: none;
     visibility: hidden;
