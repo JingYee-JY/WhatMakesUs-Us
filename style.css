@@ -82,13 +82,14 @@ button{
     left: 2vh;
 }
 .right{
+    top: 3vh;
     right: 0vh;
 }
 .logo{
-    width: 20vh;
+    width: 30vmin;
 }
 .zone{
-    width: 20vh;
+    width: 25vmin;
 }
 .top{
     height: 10vh;
