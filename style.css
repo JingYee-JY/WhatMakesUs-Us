@@ -1,0 +1,129 @@
+body{
+    background-color: #F8E7D4;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+}
+.start,
+.game,
+.final{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    place-items: center;
+    gap: 5vh;
+    width: 100%;
+    height: 100%;
+    background-color: #ECECEC;
+}
+.game{
+    gap: 2vh;
+}
+.popUp{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    place-items: center;
+    gap: 5vh;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(50, 50, 50,0.6);
+}
+.pop{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.next{
+    position: absolute;
+    margin-top: 37vh;
+}
+.nextbtn{
+    width: 20vh;
+}
+.title{
+    width: 40vh;
+}
+button{
+    background-color: rgba(255, 255, 255,0);
+    border: 0px;
+    padding: 5px 10px;
+}
+.startbtn{
+    width: 35vh;
+}
+.btn{
+    width: 30vh;
+}
+.image{
+    width: 50vh;
+}
+.right,
+.left{
+    position: absolute;
+    top: 2vh;
+}
+.left{
+    top: 5vh;
+    left: 2vh;
+}
+.right{
+    right: 0vh;
+}
+.logo{
+    width: 20vh;
+}
+.zone{
+    width: 20vh;
+}
+.top{
+    height: 10vh;
+}
+.hide{
+    display: none;
+    visibility: hidden;
+}
+.QuestionNumber{
+    height: 5vh;
+    width: 15vh;
+    font-family: "Noto Sans";
+    display: flex;
+    font-size: 3vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./img/questionNumberBackground.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    color: white;
+}
+.btn1,
+.btn2,
+.btn3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.answer{
+    width: 28vh;
+    height: 10vh;
+}
+.Q{
+    width: 35vh;
+}
+.end{
+    width: 30vh;
+}
