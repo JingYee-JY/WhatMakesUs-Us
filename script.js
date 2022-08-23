@@ -28,8 +28,7 @@ let randomQuestionIndex;
 let correctAnswer;
 let choosenAnswer;
 let score;
-
-lock(portrait);
+let choice;
 
 let Q1correctAnswer = [
     {number:"1",image:"./img/ChineseHeritage.png"},
@@ -119,8 +118,6 @@ ans3.addEventListener("click", () => {
 })
 
 submit.addEventListener("click", () => {
-    console.log(choice)
-    console.log(correctAnswer)
     if(choice == null){
         return
     }

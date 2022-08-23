@@ -77,10 +77,10 @@ button{
 }
 .logo{
     margin-left: 10%;
-    width: 30%;
+    width: 100%;
 }
 .zone{
-    width: 30%;
+    width: 100%;
 }
 .top{
     right: 0%;
@@ -139,4 +139,10 @@ p{
 .question{
     text-align: center;
     width: 100%;
+}
+
+@media only screen and (orientation:landscape){
+    body{
+        transform: rotate(90deg);
+    }
 }
