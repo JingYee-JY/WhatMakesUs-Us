@@ -24,7 +24,6 @@ body{
     height: 100%;
     background-color: #ECECEC;
 }
-.start,
 .game{
     gap: 1vh;
 }
@@ -70,7 +69,7 @@ button{
     width: 30vh;
 }
 .image{
-    width: 50vh;
+    width: 60vh;
 }
 .right,
 .left{
