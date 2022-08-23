@@ -140,9 +140,3 @@ p{
     text-align: center;
     width: 100%;
 }
-
-@media only screen and (orientation:landscape){
-    body{
-        transform: rotate(90deg);
-    }
-}
