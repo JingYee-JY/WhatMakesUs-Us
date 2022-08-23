@@ -156,6 +156,7 @@ function Question(){
 
     if(current == totalQuestion){
         console.log(score)
+        game.classList.add("hide")
         final.classList.remove("hide")
         if(score == totalQuestion){
             final.innerHTML = `
