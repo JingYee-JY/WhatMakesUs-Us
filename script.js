@@ -29,6 +29,8 @@ let correctAnswer;
 let choosenAnswer;
 let score;
 
+lock(portrait);
+
 let Q1correctAnswer = [
     {number:"1",image:"./img/ChineseHeritage.png"},
     {image: "2",image:"./img/CulturalInteractions.png"},
