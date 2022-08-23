@@ -24,6 +24,9 @@ body{
     height: 100%;
     background-color: #ECECEC;
 }
+.start{
+    gap: 10vh;
+}
 .game{
     gap: 1vh;
 }
