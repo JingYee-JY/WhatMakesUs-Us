@@ -235,7 +235,9 @@ function Question(){
     }
 
     if(randomQuestionIndex == 0){
-        question.innerHTML = `<img class="Q" src="./img/Q1.png">`
+        question.innerHTML = `
+        <p>是什么塑造了新加坡华族文化？</p>
+        <p>What shaped Chinese Singaporean culture?</p>`
         
         correctAnswer = Q2correctAnswer[randomRightIndex].number
         btn1Answer = Q2wrongAnswer[randomwrong1Index].number
@@ -266,7 +268,9 @@ function Question(){
         }
     }
     if(randomQuestionIndex == 1){
-        question.innerHTML = `<img class="Q" src="./img/Q2.png">`
+        question.innerHTML = `
+        <p>以下哪一个是14世纪淡马锡贸易的商品？</p>
+        <p>Below which one is Temasek traded product on 14th century？</p>`
 
         correctAnswer = Q2correctAnswer[randomRightIndex].number
         btn1Answer = Q2wrongAnswer[randomwrong1Index].number
