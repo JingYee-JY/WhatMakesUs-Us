@@ -164,7 +164,6 @@ function Question(){
                 <img class="logo" src="./img/logo.png">
                 <img class="zone" src="./img/zone1.png">
             </div>
-            <div class="top"></div>
             <img class="title" src="./img/title.png">
             <img class="end" src="./img/100.png">
             <button class="playAgain">
@@ -197,7 +196,10 @@ function Question(){
         }
         else if(score == 0){
             final.innerHTML = `
-            <div class="top"></div>
+            <div class="top">
+                <img class="logo" src="./img/logo.png">
+                <img class="zone" src="./img/zone1.png">
+            </div>
             <img class="title" src="./img/title.png">
             <img class="end" src="./img/0.png">
             <button class="playAgain">
