@@ -79,6 +79,7 @@ ans1.addEventListener("click", () => {
         ans2.style.backgroundColor = "rgba(255, 255, 255,0)"
         ans3.style.backgroundColor = "rgba(255, 255, 255,0)"
         ans1.style.backgroundColor = "black"
+        ans1.classList.add("selected")
         choice = btn1Answer
     }
     else if(choosenAnswer == false & randomQuestionIndex == 1){
@@ -93,6 +94,7 @@ ans2.addEventListener("click", () => {
         ans1.style.backgroundColor = "rgba(255, 255, 255,0)"
         ans3.style.backgroundColor = "rgba(255, 255, 255,0)"
         ans2.style.backgroundColor = "black"
+        ans2.classList.add("selected")
         choice = btn2Answer
     }
     else if(choosenAnswer == false & randomQuestionIndex == 1){
@@ -107,6 +109,7 @@ ans3.addEventListener("click", () => {
         ans2.style.backgroundColor = "rgba(255, 255, 255,0)"
         ans1.style.backgroundColor = "rgba(255, 255, 255,0)"
         ans3.style.backgroundColor = "black"
+        ans3.classList.add("selected")
         choice = btn3Answer
     }
     else if(choosenAnswer == false & randomQuestionIndex == 1){
@@ -151,11 +154,12 @@ submit.addEventListener("click", () => {
 
 function Question(){
     choosenAnswer = false
-    choice = null;
+    let correctImg
+    let newQuestion
 
     if(current == totalQuestion){
         console.log(score)
-        game.classList.add("hide")
+        game.classList.add('hide')
         final.classList.remove("hide")
         if(score == totalQuestion){
             final.innerHTML = `
@@ -163,6 +167,7 @@ function Question(){
                 <img class="logo" src="./img/logo.png">
                 <img class="zone" src="./img/zone1.png">
             </div>
+            <div class="top"></div>
             <img class="title" src="./img/title.png">
             <img class="end" src="./img/100.png">
             <button class="playAgain">
@@ -195,10 +200,7 @@ function Question(){
         }
         else if(score == 0){
             final.innerHTML = `
-            <div class="top">
-                <img class="logo" src="./img/logo.png">
-                <img class="zone" src="./img/zone1.png">
-            </div>
+            <div class="top"></div>
             <img class="title" src="./img/title.png">
             <img class="end" src="./img/0.png">
             <button class="playAgain">
