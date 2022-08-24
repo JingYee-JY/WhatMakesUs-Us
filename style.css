@@ -52,6 +52,7 @@ button{
 }
 .cover-bottom img{
     width: 100%;
+    height: auto;
 }
 
 /*question*/
