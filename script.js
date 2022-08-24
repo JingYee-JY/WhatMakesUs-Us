@@ -151,8 +151,7 @@ submit.addEventListener("click", () => {
 
 function Question(){
     choosenAnswer = false
-    let correctImg
-    let newQuestion
+    choice = null;
 
     if(current == totalQuestion){
         console.log(score)
