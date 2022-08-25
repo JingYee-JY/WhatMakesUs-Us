@@ -26,7 +26,7 @@ body {
     padding-top: 15px;
 }
 
-.logo{
+.logo, .zone{
     max-width: 150px;
     padding-left: 15px
 }
@@ -180,21 +180,21 @@ button{
 /*desktop*/
 @media screen and (min-width:1200px){
     .start, .game, .final{
-        max-width: 400px;
+        max-width: 500px;
         margin: 0 auto;
     }
     button.submit, button.playAgain{
-        max-width: 200px;
+        max-width: 260px;
     }
     .startbtn{
-        max-width: 200px;
+        max-width: 260px;
     }
     .answer-q{
-        max-width: 320px;
+        max-width: 360px;
         margin: 0 auto;
     }
     .final .end{
-        max-width: 320px;
+        max-width: 360px;
     }
 }
 
