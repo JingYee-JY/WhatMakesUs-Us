@@ -122,8 +122,16 @@ button.submit, button.playAgain{
 }
 .next{
     position: absolute;
+    display: flex;
+    justify-content: center;
     margin-top: 37vh;
 }
+
+.nextbtn{
+    max-width: 180px;
+    width: 50%;
+}
+
 .correct{
     width: 35vh;
 }
@@ -142,6 +150,18 @@ button.playAgain{
 .hide{
     display: none;
     visibility: hidden;
+}
+
+.next{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: 37vh;
+}
+
+.nextbtn{
+    max-width: 150px;
+    width: 30%;
 }
 
 button{
@@ -195,6 +215,10 @@ button{
     }
     .final .end{
         max-width: 360px;
+    }
+    .nextbtn{
+        max-width: 150px;
+        width: 30%;
     }
 }
 

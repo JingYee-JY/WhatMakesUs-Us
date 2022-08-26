@@ -32,8 +32,8 @@ let choice;
 
 let Q1correctAnswer = [
     {number:"1",image:"./img/ChineseHeritage.png"},
-    {image: "2",image:"./img/CulturalInteractions.png"},
-    {image: "3",image:"./img/PublicPolices.png"}]
+    {number: "2",image:"./img/CulturalInteractions.png"},
+    {number: "3",image:"./img/PublicPolices.png"}]
 let Q1wrongAnswer = [
     {number:"4",image:"./img/AsiaHeritage.png"},
     {number:"5",image:"./img/FoodCourt.png"},
