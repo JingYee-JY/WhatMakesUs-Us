@@ -113,8 +113,7 @@ submit.addEventListener("click", () => {
         <img class="next" src="./img/keepItUpV2.png">
         <p style="z-index: 1;">正确答案是</p>
         <p style="z-index: 1;">The correct answer is</p>
-        <img class="right" style="z-index: 1;" src="${correctImg}">
-        <img class="next" src="./img/keepItUp.png">`
+        <img class="right" style="z-index: 1;" src="${correctImg}">`
     }
     choosenAnswer = true;
     let next = document.querySelector(".next")
