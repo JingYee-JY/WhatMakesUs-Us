@@ -113,7 +113,8 @@ submit.addEventListener("click", () => {
         <img class="next" src="./img/keepItUpV2.png">
         <p style="z-index: 1;">正确答案是</p>
         <p style="z-index: 1;">The correct answer is</p>
-        <img class="right" style="z-index: 1;" src="${correctImg}">`
+        <img class="right" style="z-index: 1;" src="${correctImg}">
+        <img class="next" src="./img/keepItUp.png">`
     }
     choosenAnswer = true;
     let next = document.querySelector(".next")
@@ -235,8 +236,11 @@ function Question(){
         ans3.src = Q1wrongAnswer[randomwrong3Index].image
         let correctAnswerIndex = Math.floor(Math.random() * 3)+1;
         let correctAnswerId = "btn" + correctAnswerIndex;
+
         correctImg = Q1correctAnswer[randomRightIndex].image
         document.getElementById(correctAnswerId).src = correctImg
+
+        document.getElementById(correctAnswerId).src = Q1correctAnswer[randomRightIndex].image
 
         if(correctAnswerIndex == 1){
             btn1Answer = correctAnswer
@@ -266,6 +270,7 @@ function Question(){
         let correctAnswerId = "btn" + correctAnswerIndex;
         correctImg = Q2correctAnswer[randomRightIndex].image
         document.getElementById(correctAnswerId).src = correctImg
+        document.getElementById(correctAnswerId).src = Q2correctAnswer[randomRightIndex].image
 
         if(correctAnswerIndex == 1){
             btn1Answer = correctAnswer
