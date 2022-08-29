@@ -75,47 +75,29 @@ startButton.addEventListener("click", () => {
 })
 
 ans1.addEventListener("click", () => {
-    if(choosenAnswer == false & randomQuestionIndex == 0){
+    if(choosenAnswer == false){
         ans2.style.backgroundColor = "rgba(255, 255, 255,0)"
         ans3.style.backgroundColor = "rgba(255, 255, 255,0)"
         ans1.style.backgroundColor = "black"
         ans1.classList.add("selected")
         choice = btn1Answer
     }
-    else if(choosenAnswer == false & randomQuestionIndex == 1){
-        ans2.innerHTML = `<img class="answer" src="${btn2Image}">`
-        ans3.innerHTML = `<img class="answer" src="${btn3Image}">`
-        ans1.innerHTML = `<img class="answer" src="${btn1Select}">`
-        choice = btn1Answer
-    }
 })
 ans2.addEventListener("click", () => {
-    if(choosenAnswer == false & randomQuestionIndex == 0){
+    if(choosenAnswer == false){
         ans1.style.backgroundColor = "rgba(255, 255, 255,0)"
         ans3.style.backgroundColor = "rgba(255, 255, 255,0)"
         ans2.style.backgroundColor = "black"
         ans2.classList.add("selected")
         choice = btn2Answer
     }
-    else if(choosenAnswer == false & randomQuestionIndex == 1){
-        ans1.innerHTML = `<img class="answer" src="${btn1Image}">`
-        ans3.innerHTML = `<img class="answer" src="${btn3Image}">`
-        ans2.innerHTML = `<img class="answer" src="${btn2Select}">`
-        choice = btn2Answer
-    }
 })
 ans3.addEventListener("click", () => {
-    if(choosenAnswer == false & randomQuestionIndex == 0){
+    if(choosenAnswer == false){
         ans2.style.backgroundColor = "rgba(255, 255, 255,0)"
         ans1.style.backgroundColor = "rgba(255, 255, 255,0)"
         ans3.style.backgroundColor = "black"
         ans3.classList.add("selected")
-        choice = btn3Answer
-    }
-    else if(choosenAnswer == false & randomQuestionIndex == 1){
-        ans2.innerHTML = `<img class="answer" src="${btn2Image}">`
-        ans1.innerHTML = `<img class="answer" src="${btn1Image}">`
-        ans3.innerHTML = `<img class="answer" src="${btn3Select}">`
         choice = btn3Answer
     }
 })
@@ -252,10 +234,10 @@ function Question(){
         <p>是什么塑造了新加坡华族文化？</p>
         <p>What shaped Chinese Singaporean culture?</p>`
         
-        correctAnswer = Q2correctAnswer[randomRightIndex].number
-        btn1Answer = Q2wrongAnswer[randomwrong1Index].number
-        btn2Answer = Q2wrongAnswer[randomwrong2Index].number
-        btn3Answer = Q2wrongAnswer[randomwrong3Index].number
+        correctAnswer = Q1correctAnswer[randomRightIndex].number
+        btn1Answer = Q1wrongAnswer[randomwrong1Index].number
+        btn2Answer = Q1wrongAnswer[randomwrong2Index].number
+        btn3Answer = Q1wrongAnswer[randomwrong3Index].number
 
         ans1.innerHTML = `<img class="answer" src="${Q1wrongAnswer[randomwrong1Index].image}">`
         ans2.innerHTML = `<img class="answer" src="${Q1wrongAnswer[randomwrong2Index].image}">`
@@ -266,18 +248,12 @@ function Question(){
 
         if(correctAnswerIndex == 1){
             btn1Answer = correctAnswer
-            btn1Image = Q2correctAnswer[randomRightIndex].image
-            btn1Select = Q2correctAnswerSelect[randomRightIndex].image
         }
         if(correctAnswerIndex == 2){
             btn2Answer = correctAnswer
-            btn2Image = Q2correctAnswer[randomRightIndex].image
-            btn2Select = Q2correctAnswerSelect[randomRightIndex].image
         }
         if(correctAnswerIndex == 3){
             btn3Answer = correctAnswer
-            btn3Image = Q2correctAnswer[randomRightIndex].image
-            btn3Select = Q2correctAnswerSelect[randomRightIndex].image
         }
     }
     if(randomQuestionIndex == 1){
@@ -290,14 +266,6 @@ function Question(){
         btn2Answer = Q2wrongAnswer[randomwrong2Index].number
         btn3Answer = Q2wrongAnswer[randomwrong3Index].number
 
-        btn1Image = Q2wrongAnswer[randomwrong1Index].image
-        btn2Image = Q2wrongAnswer[randomwrong2Index].image
-        btn3Image = Q2wrongAnswer[randomwrong3Index].image
-
-        btn1Select = Q2wrongAnswerSelect[randomwrong1Index].image
-        btn2Select = Q2wrongAnswerSelect[randomwrong2Index].image
-        btn3Select = Q2wrongAnswerSelect[randomwrong3Index].image
-
         ans1.innerHTML = `<img class="answer" src="${Q2wrongAnswer[randomwrong1Index].image}">`
         ans2.innerHTML = `<img class="answer" src="${Q2wrongAnswer[randomwrong2Index].image}">`
         ans3.innerHTML = `<img class="answer" src="${Q2wrongAnswer[randomwrong3Index].image}">`
@@ -307,18 +275,12 @@ function Question(){
 
         if(correctAnswerIndex == 1){
             btn1Answer = correctAnswer
-            btn1Image = Q2correctAnswer[randomRightIndex].image
-            btn1Select = Q2correctAnswerSelect[randomRightIndex].image
         }
         if(correctAnswerIndex == 2){
             btn2Answer = correctAnswer
-            btn2Image = Q2correctAnswer[randomRightIndex].image
-            btn2Select = Q2correctAnswerSelect[randomRightIndex].image
         }
         if(correctAnswerIndex == 3){
             btn3Answer = correctAnswer
-            btn3Image = Q2correctAnswer[randomRightIndex].image
-            btn3Select = Q2correctAnswerSelect[randomRightIndex].image
         }
     }
 }
