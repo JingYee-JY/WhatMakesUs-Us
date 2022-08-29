@@ -82,8 +82,17 @@ button{
     margin: 0;
 }
 
-img.answer{
-    width: 100%;
+#btn1, #btn2, #btn3{
+    width: 90%;
+    border-radius: 35px;
+}
+.answer-q{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 img.btn{
@@ -112,6 +121,7 @@ button.submit, button.playAgain{
     top: 0;
     background-color: rgba(50, 50, 50,0.6);
 }
+
 .pop{
     position: relative;
     height: 100%;
@@ -120,16 +130,10 @@ button.submit, button.playAgain{
     justify-content: center;
     align-items: center;
 }
-.next{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    margin-top: 37vh;
-}
 
-.nextbtn{
-    max-width: 180px;
-    width: 50%;
+.next{
+    width: 80%;
+    max-width: 400px;
 }
 
 .correct{
@@ -150,18 +154,6 @@ button.playAgain{
 .hide{
     display: none;
     visibility: hidden;
-}
-
-.next{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    margin-top: 37vh;
-}
-
-.nextbtn{
-    max-width: 150px;
-    width: 30%;
 }
 
 button{

@@ -53,17 +53,6 @@ let Q2wrongAnswer = [
     {number:"7",image:"./img/Silk Trade.png"},
     {number:"8",image:"./img/Spice Trade.png"},
     {number:"9",image:"./img/Tea Trade.png"}]
-let Q2correctAnswerSelect = [
-        {image:"./img/Cotton Trade Select.png"},
-        {image:"./img/Hornbill Casque Trade Select.png"},
-        {image:"./img/Laka Wood Trade Select.png"}]
-let Q2wrongAnswerSelect = [
-        {image:"./img/Fish Trade Select.png"},
-        {image:"./img/Gold Metal Trade Select.png"},
-        {image:"./img/Oil Trade Select.png"},
-        {image:"./img/Silk Trade Select.png"},
-        {image:"./img/Spice Trade Select.png"},
-        {image:"./img/Tea Trade Select.png"}]
 
 startButton.addEventListener("click", () => {
     start.classList.add("hide")
@@ -76,27 +65,27 @@ startButton.addEventListener("click", () => {
 
 ans1.addEventListener("click", () => {
     if(choosenAnswer == false){
-        ans2.style.backgroundColor = "rgba(255, 255, 255,0)"
-        ans3.style.backgroundColor = "rgba(255, 255, 255,0)"
-        ans1.style.backgroundColor = "black"
+        ans3.style.border = ""
+        ans2.style.border = ""
+        ans1.style.border = "7px solid red"
         ans1.classList.add("selected")
         choice = btn1Answer
     }
 })
 ans2.addEventListener("click", () => {
     if(choosenAnswer == false){
-        ans1.style.backgroundColor = "rgba(255, 255, 255,0)"
-        ans3.style.backgroundColor = "rgba(255, 255, 255,0)"
-        ans2.style.backgroundColor = "black"
+        ans1.style.border = ""
+        ans3.style.border = ""
+        ans2.style.border = "7px solid red"
         ans2.classList.add("selected")
         choice = btn2Answer
     }
 })
 ans3.addEventListener("click", () => {
     if(choosenAnswer == false){
-        ans2.style.backgroundColor = "rgba(255, 255, 255,0)"
-        ans1.style.backgroundColor = "rgba(255, 255, 255,0)"
-        ans3.style.backgroundColor = "black"
+        ans1.style.border = ""
+        ans2.style.border = ""
+        ans3.style.border = "7px solid red"
         ans3.classList.add("selected")
         choice = btn3Answer
     }
@@ -110,25 +99,20 @@ submit.addEventListener("click", () => {
         score += 1;
         popUp.classList.remove("hide")
         pop.innerHTML = `
-        <img class="correct" src="./img/correct.png">
-            <button class="next">
-                <img class="nextbtn" src="./img/next.png">
-            </button>`
+        <img class="next" src="./img/correct.png">`
     }
     else{
         popUp.classList.remove("hide")
         pop.innerHTML = `
-        <img class="correct" src="./img/keepItUp.png">
-            <button class="next">
-                <img class="nextbtn" src="./img/next.png">
-            </button>`
+        <img class="next" src="./img/keepItUp.png">`
     }
     choosenAnswer = true;
     let next = document.querySelector(".next")
     next.addEventListener("click", () => {
-        ans1.style.backgroundColor = "rgba(255, 255, 255,0)"
-        ans2.style.backgroundColor = "rgba(255, 255, 255,0)"
-        ans3.style.backgroundColor = "rgba(255, 255, 255,0)"
+        ans1.style.border = ""
+        ans2.style.border = ""
+        ans3.style.border = ""
+        choice = null
         popUp.classList.add("hide")
         Question()
     })
@@ -239,12 +223,13 @@ function Question(){
         btn2Answer = Q1wrongAnswer[randomwrong2Index].number
         btn3Answer = Q1wrongAnswer[randomwrong3Index].number
 
-        ans1.innerHTML = `<img class="answer" src="${Q1wrongAnswer[randomwrong1Index].image}">`
-        ans2.innerHTML = `<img class="answer" src="${Q1wrongAnswer[randomwrong2Index].image}">`
-        ans3.innerHTML = `<img class="answer" src="${Q1wrongAnswer[randomwrong3Index].image}">`
+        ans1.src = Q1wrongAnswer[randomwrong1Index].image
+        ans2.src = Q1wrongAnswer[randomwrong2Index].image
+        ans3.src = Q1wrongAnswer[randomwrong3Index].image
         let correctAnswerIndex = Math.floor(Math.random() * 3)+1;
         let correctAnswerId = "btn" + correctAnswerIndex;
-        document.getElementById(correctAnswerId).innerHTML = `<img class="answer" src="${Q1correctAnswer[randomRightIndex].image}"/>`
+
+        document.getElementById(correctAnswerId).src = Q1correctAnswer[randomRightIndex].image
 
         if(correctAnswerIndex == 1){
             btn1Answer = correctAnswer
@@ -266,12 +251,13 @@ function Question(){
         btn2Answer = Q2wrongAnswer[randomwrong2Index].number
         btn3Answer = Q2wrongAnswer[randomwrong3Index].number
 
-        ans1.innerHTML = `<img class="answer" src="${Q2wrongAnswer[randomwrong1Index].image}">`
-        ans2.innerHTML = `<img class="answer" src="${Q2wrongAnswer[randomwrong2Index].image}">`
-        ans3.innerHTML = `<img class="answer" src="${Q2wrongAnswer[randomwrong3Index].image}">`
+        ans1.src = Q2wrongAnswer[randomwrong1Index].image
+        ans2.src = Q2wrongAnswer[randomwrong2Index].image
+        ans3.src = Q2wrongAnswer[randomwrong3Index].image
+
         let correctAnswerIndex = Math.floor(Math.random() * 3)+1;
         let correctAnswerId = "btn" + correctAnswerIndex;
-        document.getElementById(correctAnswerId).innerHTML = `<img class="answer" src="${Q2correctAnswer[randomRightIndex].image}"/>`
+        document.getElementById(correctAnswerId).src = Q2correctAnswer[randomRightIndex].image
 
         if(correctAnswerIndex == 1){
             btn1Answer = correctAnswer
