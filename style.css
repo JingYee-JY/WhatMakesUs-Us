@@ -22,17 +22,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 60px;
-    padding-top: 15px;
+    margin-bottom: 30px;
+    padding-top: 20px;
 }
 
 .logo, .zone{
     max-width: 150px;
-    padding-left: 15px
+    padding-left: 20px
 }
 
 .game-title{
-    margin-top: auto;
+    margin-top: 0;
     
 }
 .title{
@@ -48,7 +48,7 @@ button{
 }
 
 .cover-bottom{
-    margin-top: auto;
+    margin-top: 25px;
 }
 
 .cover-bottom img{
@@ -82,8 +82,23 @@ button{
     margin: 0;
 }
 
-img.answer{
-    width: 100%;
+#btn1, #btn2, #btn3{
+    width: 90%;
+    /* border-radius: 35px; */
+	box-sizing:border-box;
+}
+
+.selected{
+    border-radius: 24px;
+    border-radius: 35px;
+}
+.answer-q{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 img.btn{
@@ -94,6 +109,10 @@ button.submit, button.playAgain{
     max-width: 75%;
     display: flex;
     margin: 0 auto;
+}
+
+button.submit{
+	margin-top:10px;
 }
 
 .startbtn{
@@ -112,24 +131,40 @@ button.submit, button.playAgain{
     top: 0;
     background-color: rgba(50, 50, 50,0.6);
 }
+
 .pop{
     position: relative;
     height: 100%;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+.pop p{
+    margin: 0;
+}
+
+.right{
+    margin-top: 20px;
+    width: 70%;
+    border: 7px solid black;
+    border-radius: 24px;
+    max-width: 350px;
+}
+
 .next{
     position: absolute;
     display: flex;
     justify-content: center;
-    margin-top: 37vh;
+    margin-top: 0;
+    max-width: 85%;
 }
 
-.nextbtn{
-    max-width: 180px;
-    width: 50%;
+.next{
+    width: 80%;
+    max-width: 400px;
 }
 
 .correct{
@@ -152,18 +187,6 @@ button.playAgain{
     visibility: hidden;
 }
 
-.next{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    margin-top: 37vh;
-}
-
-.nextbtn{
-    max-width: 150px;
-    width: 30%;
-}
-
 button{
     cursor: pointer;
 }
@@ -172,7 +195,7 @@ button{
     max-width: 100px;
 }
 .game .zone, .final .zone {
-    max-width: 60px;
+    max-width: 120px;
 }
 
 /*ipad*/
@@ -195,6 +218,12 @@ button{
     }
     .final .end{
         max-width: 450px;
+    }
+    .next{
+        max-width: 50%;
+    }
+    .right{
+        max-width: 40%;
     }
 }
 /*desktop*/
@@ -219,6 +248,12 @@ button{
     .nextbtn{
         max-width: 150px;
         width: 30%;
+    }
+    .next{
+        max-width: 25%;
+    }
+    .right{
+        max-width: 20%;
     }
 }
 
