@@ -181,13 +181,18 @@ button.submit{
     height: 100vh;
     width: 100%;
 }
+.final .title{
+    display: flex;
+    margin: 0 auto;
+    max-width: 90%;
+}
 .final .end{
     display: flex;
     margin: 0 auto;
     max-width: 60%;
 }
 button.playAgain{
-    margin-top: 30px;
+    margin-top: 15px;
 }
 .hide{
     display: none;
