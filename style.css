@@ -8,6 +8,7 @@ body {
     height: 100%;
     background-color: #ECECEC;
     overflow: hidden;
+    position: fixed;
 }
 
 *{
@@ -26,7 +27,7 @@ body {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 20px;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 .logo, .zone{
@@ -52,6 +53,8 @@ button{
 
 .cover-bottom{
     margin-top: 25px;
+    display: flex;
+    justify-content: center;
 }
 
 .cover-bottom img{
@@ -109,7 +112,7 @@ img.btn{
     width: 100%;
 }
 
-button.submit, button.playAgain{
+button.submit, button.playAgain, button.nextZone{
     max-width: 75%;
     display: flex;
     margin: 0 auto;
@@ -235,7 +238,7 @@ button{
         gap: 40px;
         margin: 0 auto;
     }
-    button.submit, button.playAgain{
+    button.submit, button.playAgain, button.nextZone{
         max-width: 450px;
         margin-top:20px;
     }
@@ -258,7 +261,18 @@ button{
         max-width: 400px;
         margin: 0 auto;
     }
-    .startbtn,button.submit, button.playAgain{
+    .final{
+        display: flex;
+        flex-direction: column;
+    }
+    .game-title{
+        display: flex;
+        justify-content: center;
+    }
+    .title{
+        width: 90%;
+    }
+    .startbtn,button.submit, button.playAgain, button.nextZone{
         max-width: 200px;
     }
     .cover-bottom{
@@ -274,6 +288,12 @@ button{
     .final .end{
         max-width: 360px;
     }
+    .top{
+        margin-bottom: 0;
+    }
+    button.playAgain{
+        margin-top: 0;
+    }
     .nextbtn{
         max-width: 150px;
         width: 30%;
@@ -285,7 +305,8 @@ button{
         max-width: 20%;
     }
     .final .end{
-        max-width: 230px;
+        max-height: 260px;
     }
 }
+
 

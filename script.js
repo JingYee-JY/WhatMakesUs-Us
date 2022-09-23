@@ -9,6 +9,7 @@ const ans3 = document.getElementById("btn3");
 const popUp = document.querySelector(".popUp");
 const pop = document.querySelector(".pop");
 const submit = document.querySelector(".submit");
+const end = document.querySelector(".end");
 const final = document.querySelector(".final");
 
 let current;
@@ -140,52 +141,16 @@ function Question(){
         game.classList.add('hide')
         final.classList.remove("hide")
         if(score == totalQuestion){
-            final.innerHTML = `
-            <div class="top">
-                <img class="logo" src="./img/logo.png">
-                <img class="zone" src="./img/zone1.png">
-            </div>
-            <img class="title" src="./img/title.png">
-            <img class="end" src="./img/100.png">
-            <button class="playAgain">
-                <img class="btn" src="./img/playAgain.png">
-            </button>`
+           end.src="./img/100.png"
         }
         else if(score == 2){
-            final.innerHTML = `
-            <div class="top">
-                <img class="logo" src="./img/logo.png">
-                <img class="zone" src="./img/zone1.png">
-            </div>
-            <img class="title" src="./img/title.png">
-            <img class="end" src="./img/66.png">
-            <button class="playAgain">
-            <img class="btn" src="./img/playAgain.png">
-            </button>`
+            end.src="./img/66.png"
         }
         else if(score == 1){
-            final.innerHTML = `
-            <div class="top">
-                <img class="logo" src="./img/logo.png">
-                <img class="zone" src="./img/zone1.png">
-            </div>
-            <img class="title" src="./img/title.png">
-            <img class="end" src="./img/33.png">
-            <button class="playAgain">
-                <img class="btn" src="./img/playAgain.png">
-            </button>`
+            end.src="./img/33.png"
         }
         else if(score == 0){
-            final.innerHTML = `
-            <div class="top">
-            <img class="logo" src="./img/logo.png">
-            <img class="zone" src="./img/zone1.png">
-            </div>
-            <img class="title" src="./img/title.png">
-            <img class="end" src="./img/0.png">
-            <button class="playAgain">
-                <img class="btn" src="./img/playAgain.png">
-            </button>`
+            end.src="./img/0.png"
         }
         let playAgain = document.querySelector(".playAgain")
         playAgain.addEventListener("click", () => {
