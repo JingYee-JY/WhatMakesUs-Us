@@ -64,6 +64,10 @@ startButton.addEventListener("click", () => {
     Question()
 })
 
+window.addEventListener('dblclick', function(event) {
+    event.preventDefault();
+    }, { passive: false });
+
 ans1.addEventListener("click", () => {
     if(choosenAnswer == false){
         ans3.style.border = ""
@@ -256,8 +260,8 @@ function Question(){
     }
     if(randomQuestionIndex == 1){
         question.innerHTML = `
-        <p>以下哪一个是14世纪淡马锡贸易的商品？</p>
-        <p>Which of the following products was traded in Temasek during the 14th century?</p>`
+        <p>哪一个是14世纪淡马锡贸易的商品？</p>
+        <p>Which product was traded in Temasek during the 14th century?</p>`
 
         correctAnswer = Q2correctAnswer[randomRightIndex].number
         btn1Answer = Q2wrongAnswer[randomwrong1Index].number
