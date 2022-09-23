@@ -218,6 +218,9 @@ button{
     .title{
     padding: 5% 15%;
     }
+    .top{
+        margin-bottom: 30px;
+    }
     .QuestionNumber{
         width: 120px; 
         box-shadow: 0px 10px 0px 0px #b9181d;
