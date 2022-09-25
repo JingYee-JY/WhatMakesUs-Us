@@ -65,7 +65,7 @@ startButton.addEventListener("click", () => {
     Question()
 })
 
-window.addEventListener('dblclick', function(event) {
+document.addEventListener('dblclick', function(event) {
     event.preventDefault();
     }, { passive: false });
 
